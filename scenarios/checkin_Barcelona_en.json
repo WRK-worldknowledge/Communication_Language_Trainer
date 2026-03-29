@@ -1,0 +1,23 @@
+{
+  "id": "checkin_barcelona_en",
+  "title": "Check-in Barcelona",
+  "language": "en",
+  "student_view": "You are working at the check-in desk. A passenger arrives to check in for a flight to Barcelona.",
+  "hidden_context": {
+    "problem": "The passenger's luggage is overweight",
+    "extra_layer": "The passenger is in a hurry for an important meeting"
+  },
+  "behavior": {
+    "emotion_start": "neutral",
+    "escalate_if": [
+      "student does not ask questions",
+      "student gives unclear answers",
+      "student sounds uninterested"
+    ],
+    "deescalate_if": [
+      "student shows empathy",
+      "student gives clear explanation",
+      "student offers solutions"
+    ]
+  }
+}
